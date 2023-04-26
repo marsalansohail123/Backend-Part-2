@@ -131,5 +131,14 @@ app.post('/api/user', (request, response) => {
     // res.send("Create User.")
 });
 
+app.put('/api/user', (req, res) => {
+    console.log(req.body);
+    res.send("User Update.")
+});
+
+app.delete('/api/user', (req, res) => {
+    console.log(req.body);
+    res.send("User Delete.")
+});
 
 app.listen(PORT, () => console.log("Server listening on port " + PORT));
